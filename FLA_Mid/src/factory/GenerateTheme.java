@@ -1,4 +1,4 @@
-Genepackage factory;
+package factory;
 
 import model.Theme;
 

@@ -84,7 +84,8 @@ public class Main {
 			
 			System.out.println();
 			System.out.println("1. Input new post");
-			System.out.println("2. Exit program");
+			System.out.println("2. Login as another user");
+			System.out.println("3. Exit program");
 			System.out.print(">> ");
 			inActivity = scan.nextInt();
 			System.out.println();
@@ -94,11 +95,13 @@ public class Main {
 				CreatePost createPost = new CreatePost(type);
 				break;
 			case 2:
-//				UserRegister.userRegistered.clear();
 				userLogggedIn = null;
 				EnterBoard();
-				System.out.println("Goodbye!");
 				break;
+			case 3:
+				System.out.println("Goodbye!");
+				UserRegister.userRegistered.clear();
+				return;
 			default:
 				break;
 			}

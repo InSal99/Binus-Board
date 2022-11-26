@@ -1,4 +1,4 @@
-+package model;
+package model;
 
 public class Theme {
 	
@@ -45,13 +45,6 @@ public class Theme {
 
 	public void setMusic(String music) {
 		this.music = music;
-	}
-	
-	public void PrintTheme() {
-		System.out.println(this.getBackground());
-		System.out.println("          " + this.getBorder());
-		System.out.println("          " + this.getIcon());
-		System.out.println("          " + this.getMusic());
 	}
 
 
